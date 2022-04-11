@@ -1,0 +1,55 @@
+#Practical no 5
+#Q1. Wap to demonstrate single threading in python.
+#Code:
+from time import sleep, perf_counter
+def task():
+    print('Starting task...')
+    sleep(l)
+    print('done')
+start_time = pref_counter()
+task()
+task()
+end_time = pref_counter()
+exectime=end_time- start_time
+print('It took {} second(s) to compelete.'.format(excetime))
+#Q3 WAP TO ACCEPT NUMBER AND FIND SQUARE AND CUBE OF THIS NUMBER BY USING MULTITHREADING.
+CODE:
+import threading
+def cube(n):
+    print('cube={}'.format(n**3))
+def sqr(n):
+    print('square={}'.format(n**2))
+
+n=int(input('enter no'))
+
+t1 = threading.Thread(target=sqr,args=(n,))
+t2 = threading.Thread(target=cube,args=(n,))
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+print('done')
+
+
+
+#Q 4  Wap using multithreading to count no           #of vowels in each file present in directory
+from threading import Thread
+import re
+def count(fname):
+    fp=print(fname,'r')
+    s=fp.read()
+    v=re.findall('[aeiou]',s,re.I)
+    print ('No of vowels in the file ()= ()'.format(fname ,len(v)))
+    fp.close()
+
+filenames=['c://temp/test.1.txt','c://temp/test2.txt']
+threads=[]
+for f in filenames:
+    threads.append(Thread(target=count,args=(f,)))
+
+for t in threads:
+    t.start()
+for t in threads:
+    t.join()
