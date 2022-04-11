@@ -1,0 +1,56 @@
+#practiacal no 3
+#regular expression in python
+#date 11 march 2022
+
+1)WAP using regular expresion to find nio no of vowels in string
+answer: 
+import re
+txt=input("enter string:")
+x=re.findall(r"[a,e,o,u,i]",txt)
+print("no od vowels in string:",len(x))
+
+2) WAP using regular expression to count no of vowels in a file accet file name from user 
+import re
+fname=input("enter file name:")
+fo=open(fname,'r')
+s=fo.read()
+print(s)
+x=re.findall(r"[a,e,o,u,i]",s)
+print("no od vowels in file:",len(x))
+fo.close
+
+3)WAP using regular expression to count no of digits & alphabets in a file , accept file name from user
+import re
+fname=input("enter file name:")
+fo=open(fname,'r')
+s=fo.read()
+print(s)
+x=re.findall(r"[a,e,o,u,i]",s)
+print("no od vowels in file:",len(x))
+fo.close
+
+4) WAP using regular expression to replace all accorance of '&' by 'and', accept file name from user
+import re
+fname=input("enter file name:")
+fo=open(fname,'r+')
+s=fo.read()
+print(s)
+x=re.sub(r"&","and",s)
+fo.seek(0)
+fo.write(x)
+print("all & are removed")
+fo.close()
+
+5)WAP to search student name in 'student.txt file'.
+import re
+fname=input("enter file name:")
+fo=open(fname,'r')
+s=fo.read()
+print(s)
+txt=input("enter a student name ")
+x=re.search(txt,s)
+if x:
+    print('record found')
+else:
+    print("record not found")
+fo.close()
