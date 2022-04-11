@@ -1,0 +1,55 @@
+Practical no 4
+# Q.1) program demonstrate slip method
+
+time print('code execution started')
+
+dage=cordate.day-DOB.day
+
+print (yage, "years", mage, "month", dage, "days")
+
+print ("Enter DOB")
+
+a+=(1**100)
+
+end = time.time() print (^ n the time of execution of above program is", end-start)
+
+#2 WAP to calculate execution time.
+from datetime import date
+
+import
+
+def display ():
+
+print('welcome to python practical')
+
+time.sleep (15)
+
+display()
+
+print (function execution delay')
+
+#3 wap to accept Dob year mm date create a date object and show the current age of the student.
+
+import time
+
+start = time.time ()
+
+a = o
+
+for i in range (1000):
+
+year = int (input ("Enter year yyyy"))
+
+month = int (input ("Enter month MM"))
+
+day = int (input ("Enter date DD^ prime prime ) )
+
+DOB = date (year, month, day) print (DOB.strftime ("%d/B/4Y"))
+
+cordate date.today()
+
+print (cordate-DOB)
+
+yage=cordate.year-DOB.year
+
+mage=cordate.month-DOB.month
