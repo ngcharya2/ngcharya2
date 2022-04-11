@@ -1,0 +1,33 @@
+#practical no 3
+
+#regular expression in python #date 11 march 2022
+
+#1) wap using regular expression to find no. of vowel in a string
+
+'import re
+
+3= input ('enter string :') 1=re.findall('[aeiou]', s)
+
+print ('no of vowels in a string =',len (1))***
+
+#2 wap using regular expression to count no of vowels in a file accept file name from user.
+
+"'import re
+
+fname = input('enter file name') f_{0} = open(fname ,^ prime r^ 1 ) l = re.findall ('[aeiou]', s, re.I) print ('no of vowels in a file=', len (1) ) ***
+
+fo.read() s = f
+
+#3 wap using regular expression to count no of digits and alphabet in a life, accept file name from user.
+
+import re
+
+fname=input('enter file name')
+
+s-fo.read ()
+
+d-re.findall (^ prime backslash d^ prime ,s)
+
+fo=open (fname, 'r') print ('no of digit in a file=',len (d)) print ('no of alphabets in a file=',len (w))
+
+w re.findall (^ prime backslash w^ prime ,s)
